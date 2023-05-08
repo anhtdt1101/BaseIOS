@@ -8,14 +8,14 @@
 import Foundation
 import UIKit
 
-protocol TableViewCellDelegate: AnyObject{
+protocol STableViewCellDelegate: AnyObject{
     
 }
 
 class STableViewCell: UITableViewCell{
 
     var indexPath: IndexPath!
-    weak var delegate: TableViewCellDelegate?
+    weak var delegate: STableViewCellDelegate?
     var data: Any? {
         didSet{
             if let data = data{

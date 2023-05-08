@@ -19,6 +19,7 @@
 		4541054E2A04AEEE000CB2B0 /* UIView + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4541054D2A04AEEE000CB2B0 /* UIView + Extension.swift */; };
 		4589790D2A08A3720088279C /* STableHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4589790C2A08A3720088279C /* STableHeaderView.swift */; };
 		458979102A08B0AA0088279C /* SCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4589790F2A08B0AA0088279C /* SCollectionView.swift */; };
+		458979122A08B5090088279C /* SCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 458979112A08B5090088279C /* SCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		4541054D2A04AEEE000CB2B0 /* UIView + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView + Extension.swift"; sourceTree = "<group>"; };
 		4589790C2A08A3720088279C /* STableHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STableHeaderView.swift; sourceTree = "<group>"; };
 		4589790F2A08B0AA0088279C /* SCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCollectionView.swift; sourceTree = "<group>"; };
+		458979112A08B5090088279C /* SCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +123,7 @@
 			isa = PBXGroup;
 			children = (
 				4589790F2A08B0AA0088279C /* SCollectionView.swift */,
+				458979112A08B5090088279C /* SCollectionViewCell.swift */,
 			);
 			path = CollectionView;
 			sourceTree = "<group>";
@@ -196,6 +199,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				458979122A08B5090088279C /* SCollectionViewCell.swift in Sources */,
 				454105332A04A7E1000CB2B0 /* ViewController.swift in Sources */,
 				454105462A04AAF7000CB2B0 /* STableView.swift in Sources */,
 				454105492A04AB49000CB2B0 /* String + Extension.swift in Sources */,

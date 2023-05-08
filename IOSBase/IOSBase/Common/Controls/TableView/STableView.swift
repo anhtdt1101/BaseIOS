@@ -70,7 +70,7 @@ class STableView: UITableView{
     var configurationCell: ((STableViewCell, Any, IndexPath) -> Void)?
     var configurationHeader: ((STableHeaderView, Int) -> Void)?
     var onSelected:((Any, IndexPath)->Void)?
-    weak var cellDelegate: TableViewCellDelegate?
+    weak var cellDelegate: STableViewCellDelegate?
     @IBOutlet var tblDelegate:UITableViewDelegate?
     
     required init?(coder: NSCoder) {

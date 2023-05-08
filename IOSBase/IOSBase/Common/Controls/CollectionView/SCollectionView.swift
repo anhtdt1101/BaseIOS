@@ -45,6 +45,7 @@ class SCollectionView: UICollectionView{
         }
     }
     
+    var onSelected: ((Any, IndexPath) -> Void)?
     var cellDelegate: SCollectionViewCellDelegate?
     var configCell: ((SCollectionViewCell, IndexPath) -> Void)?
     var collectDelegate: UICollectionViewDelegate?
@@ -117,9 +118,9 @@ extension SCollectionView: UICollectionViewDelegate, UICollectionViewDataSource{
         }
     }
     
-//    func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
-//        cell.setTempleteWithAllSubviews(isLoading, animate: true, viewBackgroundColor: .cLoading)
-//    }
+    //    func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
+    //        cell.setTempleteWithAllSubviews(isLoading, animate: true, viewBackgroundColor: .cLoading)
+    //    }
 }
 
 extension SCollectionView: UICollectionViewDelegateFlowLayout {
@@ -136,12 +137,12 @@ extension SCollectionView: UICollectionViewDelegateFlowLayout {
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
-        // khoảng cách giữa các row
+        // space between rows
         return rowSpace
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
-        // khoảng cách giữa các colum
+        // space between colums
         return columSpace
     }
     
